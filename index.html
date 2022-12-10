@@ -218,30 +218,52 @@
             </section>
 
             <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
 
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
+
+
+
+            <!-- 
+                
+
+                <div class="work__container bd-grid"> -->
+                    <section class="work section" id="work">
+                    <h2 class="section-title">Work</h2>
+                    <div class="full-img" id="fullImgBox">
+                        <img src="../assets/img/work1.jpg" id="fullImg">
+                        <span onclick="closeFullImg()">X</span>
+                      </div>
+                      <div class="work_Section">
+                        <img src="assets/img/work1.jpg" alt="" onclick="openFullImg(this.src)">
+                        <img src="assets/img/work2.jpg" alt="" onclick="openFullImg(this.src)">
+                        <img src="assets/img/work3.jpg" alt="" onclick="openFullImg(this.src)">
+                        <img src="assets/img/work4.jpg" alt="" onclick="openFullImg(this.src)">
+                        <img src="assets/img/work5.jpg" alt="" onclick="openFullImg(this.src)">
+                        <img src="assets/img/work6.jpg" alt="" onclick="openFullImg(this.src)">
+                        </div>
+                    <!-- </div> -->
             </section>
+
+            <script>
+
+                var fullImgBox = document.getElementById("fullImgBox");
+                var fullImg = document.getElementById("fullImg");
+            
+                function openFullImg(pic){
+                  fullImgBox.style.display = "flex";
+                  fullImg.src = pic;
+                }
+            
+                function closeFullImg(){
+                  fullImgBox.style.display = "none";
+                }
+            
+            
+            
+              </script>
+
+
+
+
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
@@ -279,46 +301,3 @@
 </html>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./assets/Css/style.css">
-
-    <!-- Box icons -->
-    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <title>Portfolio Archana</title>
-</head>
-<body>
-
-
-
-    <main class="1-main">
-    </main>
-  
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-
-    <script src="./assets/Js/main.js"></script>   
-</body> -->
-<!-- </html> --> -->
